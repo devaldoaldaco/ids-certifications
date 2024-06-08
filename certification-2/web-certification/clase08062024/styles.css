@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+}
+
+img:hover {
+    display: none;
+}
+/*SELECTOR DE PSEUDOCLASES*/
+input:focus {
+    background-color: yellow;
+}
+/*SELECTOR DE PSEUDOELEMENTOS*/
+input::outline {
+}
+
+article p {
+    color: greenyellow;
+}
+
+article > p {
+    color: black;
+}
+
+h2 + p {
+    background-color: violet;
+}
+
+h2 ~ p {
+    background-color: violet;
+}
+
+#div {
+    background-color: black;
+    color: green;
+    text-shadow: #FFF 3px 0 8px;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    padding: 1rem;
+    display: inline-block;
+    height: 10rem;
+    width: 50%;
+}
+/*SASS*/
+#padre {
+    display: flex;
+    flex-direction: row;
+    .section-hijo {
+        display: flex;
+        flex-direction: column;
+        div {
+            height: 10rem;
+            width: 10rem;
+            background-color: rgb(243, 36, 0);
+            margin: 1rem;
+            color: #FFFFFF;
+        }
+    }
+}
+
+/* #padre {
+    display: flex;
+    flex-direction: row; 
+}
+
+#padre .section-hijo {
+    display: flex;
+    flex-direction: column;
+}
+
+#padre .section-hijo div {
+    height: 10rem;
+    width: 10rem;
+    background-color: tomato;
+    margin: 1rem;
+} */
