@@ -1,0 +1,32 @@
+span {
+    background-color: red;
+    color: white;
+}
+
+h1 {
+    color: black;
+}
+
+h1 {
+    color: red;
+}
+
+.text-negro {
+    color: green;
+}
+
+#parrafo {
+    color: white;
+}
+
+div {
+    margin: 10px;
+    padding: 10px;
+}
+
+div > p {
+    color: initial;
+    margin: inherit;
+    padding: inherit;
+}
+

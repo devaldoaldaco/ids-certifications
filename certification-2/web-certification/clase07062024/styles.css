@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+/*SELECTORES DE TIPO*/
+h1 {
+    color: red; 
+}
+
+p {
+    color: red; 
+}
+
+h1, p {
+    color: red; 
+}
+
+/*SELECTORES DE CLASE*/
+.texto-blanco {
+    color: white;
+    background-color: black;
+}
+
+/*SELECTORES DE ID*/
+#circleViolet {
+    background-color: blueviolet;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+/*SELECTORES DE ATRIBUTO*/
+/*El valor del atributo es exactamente circle bg-red*/
+div[class="circle bg-red"] {
+    background-color: blue;
+}
+/*El valor del atributo empieza con el valor circle bg-red*/
+div[class^="circle bg-red"] {
+    background-color: blue;
+}
+/*El valor del atributo termina con el valor circle bg-red*/
+div[class$="circle bg-red"] {
+    background-color: blue;
+}
+/*El valor del atributo contiene el valor circle bg-red*/
+div[class*="circle bg-red"] {
+    background-color: blue;
+}
+
